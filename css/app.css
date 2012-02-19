@@ -27,13 +27,14 @@ header {
 #content { }
 
 .btn-large {
-font-size: 24px;
-font-weight: normal;
-padding: 20px 0px;
-margin-right: 0px;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
-border-radius: 6px;
+	font-size: 24px;
+	font-weight: normal;
+	padding: 20px 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 }
 
 
