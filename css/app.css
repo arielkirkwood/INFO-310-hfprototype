@@ -37,6 +37,10 @@ header {
 	border-radius: 6px;
 }
 
+.modal {
+	display: none;
+}
+
 
 /* =============================================================================
    Primary Content
