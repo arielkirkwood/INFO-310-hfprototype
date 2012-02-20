@@ -26,7 +26,7 @@ header {
 
 #content { }
 
-.btn-large {
+.btn-option {
 	font-size: 24px;
 	font-weight: normal;
 	padding: 20px 0px;
@@ -35,6 +35,28 @@ header {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+}
+
+.btn-modal {
+	padding: 11px 0px;
+	width: 108px;
+	font-size: 30px;
+	line-height: normal;
+	margin: 10px 9px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.modal-body {
+
+}
+
+.modal-body .row {
+	display: block;
+	margin-left: 4px;
+	margin-right: auto;
+	margin-bottom: 10px;
 }
 
 
@@ -50,24 +72,3 @@ header {
    ========================================================================== */
 
 
-/* =============================================================================
-   WordPress Generated Classes
-   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-   ========================================================================== */
-
-.aligncenter { display: block; margin: 0 auto; }
-.alignleft { margin: 0 20px 20px 0; float: left; }
-.alignright { margin: 0 0 20px 20px; float: right; }
-
-
-
-/* =============================================================================
-   Media Queries
-   ========================================================================== */
-
-@media (max-width: 980px) {
-  /* Fix top padding when using the responsive grid with the fixed topbar */
-  body {
-    padding-top: 0;
-  }
-}
