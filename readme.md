@@ -2,6 +2,8 @@ This repo is a set of HTML/CSS/JS prototypes I created for my INFO 310 Human-Com
 
 The project was to do a set of prototypes for a new vital signs monitoring system.
 
+Demo available here: http://neonelectro.github.com/INFO-310-hfprototype/
+
 Used in the project:
 
 * Twitter Bootstrap (http://twitter.github.com/bootstrap/)
