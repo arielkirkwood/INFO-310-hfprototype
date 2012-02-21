@@ -25,28 +25,64 @@
             </center>
           </header>
           <hr/>
+          <ul class="breadcrumb">
+	        <li>
+		      <a href="index.html">Home</a> <span class="divider">/</span>
+			</li>
+		    <li class="active">
+		      <a href="summary_alarm.html">Alarm Parameters</a>
+		    </li>
+		  </ul>
       	  <div id="parameters" class="span8 offset2">
       	    <div class="parameter">
       	      <b>Lower Parameter:</b>
-      	      <span class="label label-info">???</span>
+      	      <span class="label label-info">110/65</span>
       	      <span class="pull-right">
-              <a class="span3 btn" href="#">Change Lower Parameter</a>
+              <a class="span3 btn" data-toggle="modal" href="#alarmModal">Change Lower Parameter</a>
               </span>
             </div>
             <div class="parameter">
               <b>Upper Parameter</b>  
-              <span class="label label-info">???</span>
+              <span class="label label-info">140/90</span>
               <span class="pull-right">
-              <a class="span3 btn" href="#">Change Upper Parameter</a>
+              <a class="span3 btn" data-toggle="modal" href="#alarmModal">Change Upper Parameter</a>
               </span>
             </div>
             <br/>
             <div id="accept-decline-buttons">
-            <a class="span3 btn btn-primary" href="#">Accept</a>
+            <a class="span3 btn btn-primary" href="index.html">Accept</a>
             <a class="span3 offset1 btn pull-right" href="#">Decline</a>
             </div>
           </div> <!-- /#parameters -->
         </div> <!-- /container -->
+        
+        <div class="modal fade" id="alarmModal">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Set an alarm parameter</h3>
+      </div>
+    <div class="modal-body">
+        <div class="btn-group" id="upper-lower-selectors">
+          <div data-toggle="buttons-radio">
+		  <button class="btn btn-group-option">Lower Parameter</button>
+		  <button class="btn btn-group-option">Upper Parameter</button>
+		  </div>
+		</div>
+      <form>
+        <label>Set the parameter:</label>
+		<input type="text" class="span3" id="bp-input">
+		<span class="help-inline">
+		Currently:
+		<span id="lower-bp-param" class="label label-info">Lower: 110/65</span>
+		<span id="upper-bp-param" class="label label-info">Upper: 140/90</span>
+		</span>
+	  </form>
+    </div>
+      <div class="modal-footer">
+        <a href="summary_med.html" class="btn btn-primary">Save Changes</a>
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+      </div>
+    </div>
     
         <!-- Le javascript
         ================================================== -->

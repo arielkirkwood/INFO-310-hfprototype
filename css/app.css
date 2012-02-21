@@ -20,11 +20,36 @@ header {
 	text-align: center;
 }
 
+georgia {
+	font-family: Georgia;
+}
+
 /* =============================================================================
    Content
    ========================================================================== */
 
 #content { }
+
+canvas { }
+
+.label-big {
+	font-size: 58px;
+	vertical-align: 16px;
+	padding: 2px 15px;
+}
+
+.label-big a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.full-label {
+	width: 125px;
+	line-height: 35px;
+	font-size: 30px;
+	vertical-align: 46px;
+	word-wrap: break-word;
+}
 
 .btn-option {
 	font-size: 24px;
@@ -35,6 +60,13 @@ header {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
+}
+
+.btn-group-option {
+	width: 265px;
+	font-size: 24px;
+	font-weight: bold;
+	padding: 10px 0px;
 }
 
 .btn-modal {
@@ -48,15 +80,17 @@ header {
 	border-radius: 5px;
 }
 
-.modal-body {
-
-}
+.modal-body { }
 
 .modal-body .row {
 	display: block;
 	margin-left: 4px;
 	margin-right: auto;
 	margin-bottom: 10px;
+}
+
+.modal .label-primary {
+	background-color: #04c;
 }
 
 #parameters .parameter {
@@ -76,6 +110,16 @@ header {
 	font-weight: bold;
 	padding: 10px 0px;
 	margin-left: 0px;
+}
+
+#upper-lower-selectors {
+	margin-bottom: 10px;
+}
+
+#bp-input {
+	font-size: 24px;
+	height: 24px;
+	width: 255px;
 }
 
 

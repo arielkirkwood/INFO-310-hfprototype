@@ -24,28 +24,69 @@
             </center>
           </header>
           <hr/>
+          <ul class="breadcrumb">
+	        <li>
+	         <a href="index.html">Home</a> <span class="divider">/</span>
+			</li>
+			<li>
+		      <a href="options.html">Select Option</a> <span class="divider">/</span>
+		    </li>
+		    <li>
+		      <a href="treatments.html">Select Treatment</a> <span class="divider">/</span>
+		    </li>
+		    <li class="active">
+		      <a href="summary_med.html">Treatment Summary</a>
+		    </li>
+		  </ul>
       	  <div id="parameters" class="span8 offset2">
       	    <div class="parameter">
       	    <b>The medication you selected is:</b>
       	      <span class="label label-info">Warfarin</span>
       	      <span class="pull-right">
-              <a class="span2 btn" href="#">Change Drug</a>
+              <a class="span2 btn" href="treatments.html">Change Drug</a>
               </span>
             </div>
             <div class="parameter">
               <b>The dosage you selected is:</b>  
               <span class="label label-info">2mg</span>
               <span class="pull-right">
-              <a class="span2 btn" href="#">Change Dose</a>
+              <a class="span2 btn" data-toggle="modal" href="#warfarinModal">Change Dose</a>
               </span>
             </div>
             <br/>
             <div id="accept-decline-buttons">
-            <a class="span3 btn btn-primary" href="#">Accept</a>
-            <a class="span3 offset1 btn pull-right" href="#">Decline</a>
+            <a class="span3 btn btn-primary" href="index.html">Accept</a>
+            <a class="span3 offset1 btn pull-right" href="index.html">Decline</a>
             </div>
           </div> <!-- /#parameters -->
         </div> <!-- /container -->
+        
+        <div class="modal fade" id="warfarinModal">
+      <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>Select a dosage</h3>
+      </div>
+    <div class="modal-body">
+      <div data-toggle="buttons-radio">
+        <button class="btn btn-modal">.5mg</button>
+	    <button class="btn btn-modal">1mg</button>
+	    <button class="btn btn-primary btn-modal">2mg</button>
+	    <button class="btn btn-modal">2.5mg</button>
+        <button class="btn btn-modal">3mg</button>
+	    <button class="btn btn-modal">4mg</button>
+	    <button class="btn btn-primary btn-modal">5mg</button>
+	    <button class="btn btn-modal">6mg</button>
+        <button class="btn btn-modal">7.5mg</button>
+	    <button class="btn btn-modal">10mg</button>
+	    <button class="btn btn-info btn-modal">Other</button>
+	  </div> <!-- /buttons-radio -->
+    </div>
+      <div class="modal-footer">
+        <span class="label label-primary">Blue</span> values are suggested dosages.
+        <a href="summary_med.html" class="btn btn-primary">Save Changes</a>
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+      </div>
+    </div>
         
         
         <!-- Le javascript

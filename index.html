@@ -23,40 +23,63 @@
   </head>
 
   <body>
-
-    <div class="container">
-	  <header>
-	  	<center>
-	      <h1>Select Option</h1>
-	    </center>
-	  </header>
-	  <hr/>
-	  <div class="options-container">
-	    <div class="row">
-	    <p class="span4">
-	      <a class="span4 btn btn-primary btn-option" href="treatments.html">Enter New Treatment</a>
-	    </p>
-	    <p class="span4">
-   	      <a class="span4 btn btn-primary btn-option" href="#">View All Treatments</a>
-        </p>
-        <p class="span4">
-          <a class="span4 btn btn-primary btn-option" href="#">View All Treatment Trends</a>
-	    </p>
-	    </div>
-	    <div class="row">
-	    <p class="span4">
-	      <a class="span4 btn btn-primary btn-option" href="#">Significant Events</a>
-	    </p>
-	    </div>
-	  </div> <!-- /options-container -->
-    </div> <!-- /container -->
-
-    <!-- Le javascript
+  
+  <div class="container">
+    <header>
+	  <center>
+	  <h1>
+	    <georgia><em>Vitae Signa</em></georgia>
+	  </h1>
+	  </center>
+	</header>
+	<hr/>
+	<ul class="breadcrumb">
+        <li class="active">
+	      <a href="index.html">Home</a>
+		</li>
+	  </ul>
+	<div class="data-row">
+	<canvas width="620px" height="75px" id="hr-sparkline"></canvas>
+	<span class="label label-big label-success"><a href="#">HR</a></span>
+	<a href="#"><img class="pull-right" src="img/sound-off.png"/></a>
+	<p class="full-label pull-right">
+	Heart Rate
+	</p>
+	</div>
+	<div class="data-row">
+	<canvas width="620px" height="75px" id="bp-sparkline"></canvas>
+	<span class="label label-big label-important"><a href="options.html">BP</a></span>
+	<a href="summary_alarm.html"><img class="pull-right" src="img/sound-on.png"/></a>
+	<p class="full-label pull-right">
+	Blood Pressure
+	</span>
+	</div>
+	<div class="data-row">
+	<canvas width="620px" height="75px" id="po-sparkline"></canvas>
+	<span class="label label-big label-success"><a href="#">PO</a></span>
+	<a href="#"><img class="pull-right" src="img/sound-on.png"/></a>
+	<p class="full-label pull-right">
+	Pulse Oximetry
+	</span>
+	</div>
+	<div class="data-row">
+	<canvas width="620px" height="75px" id="te-sparkline"></canvas>
+	<span class="label label-big label-success"><a href="#">TE</a></span>
+	<a href="#"><img class="pull-right" src="img/sound-on.png"/></a>
+	<p class="full-label pull-right">
+	Temp (deg. C)
+	</span>
+	</div>
+  </div>
+  
+  <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/processing.js"></script>
+    <script src="js/sparklines.min.js"></script>
     <script src="js/script.js"></script>
 
   </body>
