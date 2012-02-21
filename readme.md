@@ -1,4 +1,4 @@
-This repo is a set of HTML/CSS/JS prototypes I created for my INFO 310 Human-Computer Interaction II class during my Winter 2012 term at Drexel.
+This repo is a set of HTML/CSS/JS prototypes I created for my INFO 310 Human-Computer Interaction II group project during my Winter 2012 term at Drexel.
 
 The project was to do a set of prototypes for a new vital signs monitoring system.
 

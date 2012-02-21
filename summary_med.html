@@ -29,7 +29,7 @@
 	         <a href="index.html">Home</a> <span class="divider">/</span>
 			</li>
 			<li>
-		      <a href="options.html">Select Option</a> <span class="divider">/</span>
+		      <a href="options.html">Select Option (Heart Rate)</a> <span class="divider">/</span>
 		    </li>
 		    <li>
 		      <a href="treatments.html">Select Treatment</a> <span class="divider">/</span>
@@ -54,6 +54,10 @@
               </span>
             </div>
             <br/>
+            <b>Current Heart Rate</b><span class="label label-warning">55bpm</span>
+            <div id="relevant-trend">
+		  	  <a href="specified_trend.html"><canvas width="470px" height="100px" id="hr-sparkline"></canvas></a>
+		    </div>
             <div id="accept-decline-buttons">
             <a class="span3 btn btn-primary" href="index.html">Accept</a>
             <a class="span3 offset1 btn pull-right" href="index.html">Decline</a>
@@ -97,9 +101,9 @@
         <script>
             window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')
         </script>
-        <script src="js/bootstrap.min.js">
-        </script>
-        <script src="js/script.js">
-        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/processing.js"></script>
+   		<script src="js/sparklines.min.js"></script>
+    	<script src="js/script.js"></script>
     </body>
 </html>

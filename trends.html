@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vitae Signa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+  
+  <div class="container">
+  <header>
+	  <center>
+	  <h1>Trends</h1>
+	  </center>
+	</header>
+	<hr/>
+	<ul class="breadcrumb">
+      <li>
+	    <a href="index.html">Home</a> <span class="divider">/</span>
+	  </li>
+      <li class="active">
+	    <a href="index.html">Trends</a>
+	  </li>
+	</ul>
+	  <div class="data-row">
+	  	<a href="specified_trend.html"><canvas width="470px" height="100px" id="hr-sparkline"></canvas></a>
+		<span class="label label-big label-warning"><a href="specified_trend.html">HR 55bpm</a></span>
+	  </div>
+	  <div class="data-row">
+	  	<canvas width="470px" height="100px" id="bp-sparkline"></canvas>
+		<span class="label label-big label-success"><a href="#">BP 110/90</a></span>
+	  </div>
+	  <div class="data-row">
+		<canvas width="470px" height="100px" id="po-sparkline"></canvas>
+		<span class="label label-big label-success"><a href="#">PO 95%</a></span>
+	  </div>
+	  <div class="data-row">
+		<canvas width="470px" height="100px" id="te-sparkline"></canvas>
+		<span class="label label-big label-success"><a href="#">TE 98.6&deg;</a></span>
+	  </div>
+  </div>
+  
+  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/processing.js"></script>
+    <script src="js/sparklines.min.js"></script>
+    <script src="js/script-trend-list.js"></script>
+
+  </body>
+</html>

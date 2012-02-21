@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vitae Signa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+  
+  <div class="container">
+  <header>
+	  <center>
+	  <h1>Trends</h1>
+	  </center>
+	</header>
+	<hr/>
+	<ul class="breadcrumb">
+      <li>
+	    <a href="index.html">Home</a> <span class="divider">/</span>
+	  </li>
+	  <li>
+	    <a href="trends.html">Trends</a> <span class="divider">/</span>
+	  </li>
+	  <li class="active">
+	    <a href="specified_trend.html">Specified Trend: Heart Rate</a>
+	  </li>
+	</ul>
+	  <div class="data-row-header">
+	  <div class="row">
+	    <div class="span6">
+	      <span class="label label-medium">Before</span>
+	    </div>
+		<div class="span6">
+	      <span class="label label-medium">After</span>
+	    </div>
+	  </div>
+	</div>
+	  <div class="data-row">
+		<canvas width="460px" height="150px" id="hr-sparkline-before"></canvas>
+		<canvas width="460px" height="150px" id="hr-sparkline-after"></canvas>		
+	  </div>
+	  <div class="data-row-label">
+	    <div class="row">
+  		  <div id="i-love-hax">
+		  <div class="span6">
+		  	<span class="label label-big label-warning"><a href="#">55 bpm</a></span>
+		    <span class="label label-big">Aspirin</span>
+		  </div>
+	 	  <div class="span6">
+		  	<span class="label label-big label-success"><a href="#">80 bpm</a></span>
+		    <span class="label label-big">Warfarin</span>
+		  </div>	  
+		  </div>
+	    </div>
+	  </div>
+    </div>
+  
+  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/processing.js"></script>
+    <script src="js/sparklines.min.js"></script>
+    <script src="js/script-specified-trend.js"></script>
+
+  </body>
+</html>
