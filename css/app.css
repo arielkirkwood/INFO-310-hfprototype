@@ -70,13 +70,13 @@ canvas { }
 	text-decoration: none;
 }
 
+/*
 .full-label {
-	width: 125px;
+	width: 200px;
 	line-height: 35px;
-	font-size: 30px;
-	vertical-align: 46px;
-	word-wrap: break-word;
+	vertical-align: 41px;
 }
+*/
 
 .btn-option {
 	font-size: 24px;
@@ -105,6 +105,14 @@ canvas { }
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+}
+
+.btn-big {
+	font-size: 58px;
+	font-weight: bold;
+	vertical-align: 0px;
+	padding: 28px 0px;
+	width: 160px;
 }
 
 .modal-body { }
