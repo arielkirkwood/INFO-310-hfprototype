@@ -6,5 +6,6 @@ Demo available here: http://neonelectro.github.com/INFO-310-hfprototype/
 
 Used in the project:
 
+* HTML5 Boilerplate (http://html5boilerplate.com/)
 * Twitter Bootstrap (http://twitter.github.com/bootstrap/)
 * sparklines.js (http://willarson.com/code/sparklines/sparklines.html)
