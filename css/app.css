@@ -53,6 +53,12 @@ canvas { }
 	margin-left: 15px;
 }
 
+.label-footer {
+	font-size: 24px;
+	padding: 5px 5px 5px;
+	vertical-align: baseline;
+}
+
 .label-medium {
 	font-size: 24px;
 	vertical-align: 16px;
@@ -134,6 +140,7 @@ canvas { }
 
 #parameters .label, b { 
 	font-size: 18px;
+	vertical-align: baseline;
 }
 
 #accept-decline-buttons {
@@ -169,4 +176,8 @@ canvas { }
    Footer
    ========================================================================== */
 
-
+.navbar .nav > li > a {
+	font-size: 24px;
+	padding: 10px 5px 1px;
+	line-height: 40px;
+}

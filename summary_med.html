@@ -54,7 +54,7 @@
               </span>
             </div>
             <br/>
-            <b>Current Heart Rate</b><span class="label label-warning">55bpm</span>
+            <b>Current Heart Rate: </b><span class="label label-warning">55bpm</span>
             <div id="relevant-trend">
 		  	  <a href="specified_trend.html"><canvas width="470px" height="100px" id="hr-sparkline"></canvas></a>
 		    </div>
@@ -86,12 +86,30 @@
 	  </div> <!-- /buttons-radio -->
     </div>
       <div class="modal-footer">
+        <p>
         <span class="label label-primary">Blue</span> values are suggested dosages.
         <a href="summary_med.html" class="btn btn-primary">Save Changes</a>
         <a href="#" class="btn" data-dismiss="modal">Close</a>
+        </p>
       </div>
     </div>
         
+    <div class="navbar navbar-fixed-bottom">
+  	  <div class="navbar-inner">
+        <div class="container">
+          <ul class="nav">
+            <li><a href="specified_trend.html"><canvas width="80px" height="40px" id="hr-sparkline-mini"></canvas></a></li>
+            <li><a href="#"><span class="label label-footer label-warning">HR | 55bpm</span></a></li>
+            <li><a href="#"><canvas width="80px" height="40px" id="bp-sparkline-mini"></canvas></a></li>
+            <li><a href="#">BP | 110/90</a></li>
+            <li><a href="#"><canvas width="80px" height="40px" id="po-sparkline-mini"></canvas></a></li>
+            <li><a href="#">SPO<sub>2</sub> | 95%</a></li>
+            <li><a href="#"><canvas width="80px" height="40px" id="te-sparkline-mini"></canvas></a></li>
+            <li><a href="#">T | 98.6&deg;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>    
         
         <!-- Le javascript
         ================================================== -->
@@ -103,7 +121,8 @@
         </script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/processing.js"></script>
-   		<script src="js/sparklines.min.js"></script>
+   		<script src="js/sparklines.js"></script>
     	<script src="js/script.js"></script>
+	    <script src="js/script-mini.js"></script>
     </body>
 </html>

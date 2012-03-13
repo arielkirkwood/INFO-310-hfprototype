@@ -84,6 +84,23 @@
       </div>
     </div>
     
+    <div class="navbar navbar-fixed-bottom">
+  	  <div class="navbar-inner">
+        <div class="container">
+          <ul class="nav">
+            <li><a href="specified_trend.html"><canvas width="80px" height="40px" id="hr-sparkline-mini"></canvas></a></li>
+            <li><a href="#"><span class="label label-footer label-warning">HR | 55bpm</span></a></li>
+            <li><a href="#"><canvas width="80px" height="40px" id="bp-sparkline-mini"></canvas></a></li>
+            <li><a href="#">BP | 110/90</a></li>
+            <li><a href="#"><canvas width="80px" height="40px" id="po-sparkline-mini"></canvas></a></li>
+            <li><a href="#">SPO<sub>2</sub> | 95%</a></li>
+            <li><a href="#"><canvas width="80px" height="40px" id="te-sparkline-mini"></canvas></a></li>
+            <li><a href="#">T | 98.6&deg;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
         <!-- Le javascript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -92,9 +109,10 @@
         <script>
             window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')
         </script>
-        <script src="js/bootstrap.min.js">
-        </script>
-        <script src="js/script.js">
-        </script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/processing.js"></script>
+    	<script src="js/sparklines.js"></script>
+    	<script src="js/script-mini.js"></script>
     </body>
 </html>
